@@ -1,0 +1,252 @@
+/* CSS optimizado para la página de inicio de AquaNova */
+
+/* Configuración general de la página */
+#colorofondo {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    font-family: 'Arial', sans-serif; /* Fuente Arial */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+  }
+  
+  /* Barra de navegación */
+  header {
+    position: fixed; /* Fijo en la parte superior */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Posición en la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    background-color: rgba(0, 19, 66, 0.9); /* Fondo azul oscuro con transparencia */
+    z-index: 1000; /* Superposición alta */
+    padding: 10px 0; /* Relleno superior e inferior */
+  }
+  
+  .navbar {
+    display: flex; /* Flexbox para alineación */
+    align-items: center; /* Alineación vertical centrada */
+    justify-content: space-between; /* Espacio entre elementos */
+    padding: 0 20px; /* Relleno lateral */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+  }
+  
+  .logo {
+    height: 70px; /* Altura del logo */
+  }
+  
+  .nav-links {
+    list-style: none; /* Sin viñetas */
+    display: flex; /* Flexbox para alineación */
+    gap: 20px; /* Espacio entre enlaces */
+    padding: 0; /* Sin relleno */
+  }
+  
+  .nav-links a {
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 10px 15px; /* Relleno interno */
+    transition: 0.3s; /* Transición suave */
+  }
+  
+  .nav-links a:hover {
+    background-color: #0f1895; /* Fondo azul al pasar el ratón */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  #buscar {
+    padding: 8px; /* Relleno interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Sin contorno */
+    width: 200px; /* Ancho del campo */
+    margin-left: auto; /* Margen izquierdo automático */
+  }
+  
+  /* Sección de video con logo */
+  .seccion-video-logo {
+    position: relative; /* Posición relativa */
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura de la ventana */
+    display: flex; /* Flexbox para alineación */
+    align-items: center; /* Alineación vertical centrada */
+    justify-content: center; /* Alineación horizontal centrada */
+    text-align: center; /* Texto centrado */
+  }
+  
+  .video-logo {
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Alineado en la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    object-fit: cover; /* Cubrir el contenedor */
+  }
+  
+  /* Sección de video principal */
+  .seccion-video {
+    position: relative; /* Posición relativa */
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura de la ventana */
+    display: flex; /* Flexbox para alineación */
+    align-items: center; /* Alineación vertical centrada */
+    justify-content: center; /* Alineación horizontal centrada */
+    text-align: center; /* Texto centrado */
+    overflow: hidden; /* Ocultar desbordamiento */
+  }
+  
+  .fondo-video {
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Alineado en la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    object-fit: cover; /* Cubrir el contenedor */
+    z-index: -1; /* Detrás del contenido */
+    filter: brightness(60%); /* Brillo reducido */
+  }
+  
+  .contenido {
+    position: relative; /* Posición relativa */
+    z-index: 2; /* Superposición alta, son las capas */
+    color: white; /* Texto blanco */
+    text-shadow: 3px 3px 10px black; /* Sombra de texto */
+    padding: 20px; /* Relleno interno */
+    border-radius: 15px; /* Bordes redondeados */
+  }
+  
+  .titulo {
+    font-size: 100px; /* T+amaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 4px; /* Espaciado entre letras */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+  }
+  
+  .descripcion {
+    font-size: 20px; /* Tamaño de fuente */
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    opacity: 0.9; /* Opacidad */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+  }
+  
+  /* Sección de innovación */
+  .seccion-innovacion {
+    display: flex; /* Flexbox para alineación */
+    align-items: center; /* Alineación vertical centrada */
+    justify-content: center; /* Alineación horizontal centrada */
+    flex-wrap: wrap; /* Flexbox con envoltura */
+    padding: 60px 20px; /* Relleno interno */
+    text-align: center; /* Texto centrado */
+    background: #121212; /* Fondo oscuro */
+    background-image: url(../css/medios/imagenes/tropical-fish-in-aquarium-in-zoo-2025-01-16-08-42-08-utc.jpg); /* Imagen de fondo */
+    background-size: 100%; /* Tamaño de fondo completo */
+  }
+  
+  .imagen {
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 2px 2px 20px rgba(3, 87, 120, 0.8); /* Sombra de caja */
+    width: 55%; /* Ancho relativo */
+    height: auto; /* Altura automática */
+    max-width: 600px; /* Ancho máximo */
+  }
+  
+  .texto {
+    max-width: 800px; /* Ancho máximo */
+    text-align: justify; /* Texto justificado */
+    font-size: 24px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    margin-top: 20px; /* Margen superior */
+    text-shadow: 5px 5px 10px black; /* Sombra de texto */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+  }
+  
+  /* Animación de entrada */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Opacidad inicial */
+    }
+    to {
+      opacity: 1; /* Opacidad final */
+    }
+  }
+  
+  /* Sección de productos destacados */
+  .seccion-productos {
+    text-align: center; /* Texto centrado */
+    padding: 60px 20px; /* Relleno interno */
+    background: linear-gradient(to bottom, #001933, #003366); /* Degradado de fondo */
+    color: white; /* Texto blanco */
+  }
+  
+  .titulo-seccion {
+    font-size: 36px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    margin-bottom: 40px; /* Margen inferior */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3); /* Sombra de texto */
+  }
+  
+  .contenedor-productos {
+    display: flex; /* Flexbox para alineación */
+    justify-content: center; /* Alineación horizontal centrada */
+    gap: 30px; /* Espacio entre productos */
+    flex-wrap: wrap; /* Flexbox con envoltura */
+  }
+  
+  .producto {
+    background: #0a1f44; /* Fondo oscuro */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno */
+    width: 300px; /* Ancho fijo */
+    text-align: center; /* Texto centrado */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Sombra de caja */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+  }
+  
+  .producto img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .producto:hover {
+    transform: scale(1.05); /* Escala al pasar el ratón */
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4); /* Sombra de caja */
+  }
+  
+  /*Estilos de la barra de contacto (footer) */
+  .footer { /*estilo del footer*/
+    position: fixed; /*fija elemento en pantalla*/
+    bottom: 0; /*posiciona en la parte de abajo*/
+    width: 100%; /*ancho*/
+    background-color: rgba(0, 19, 66, 0.9); /*color de fondo*/
+    color: white; /*color de la letra*/
+    text-align: center; /*alinea el texto al centro*/
+    padding: 10px 0; /*espacio entre el contenido y el borde*/
+    font-size: 16px; /*tamaño de la letra*/
+  }
+  
+  .footer-contenido { /*estilo del contenido del footer*/
+    display: flex; /*alinea y distribuye el espacio en la barra de navegacion*/
+    justify-content: center; /*justifica el contenido*/
+    gap: 20px; /*espacio entre los elementos*/
+    flex-wrap: wrap; /*ajusta el contenido al tamaño del contenedor*/
+  }
+  
+  .footer-contenido p { /*estilo del parrafo*/
+    margin: 5px; /*margen*/
+  }
+  
+  .footer-contenido a { /*estilo de los enlaces*/
+    color: #00bfff; /* color de la letra*/
+    text-decoration: none; /*quita la subraya*/
+    font-weight: bold; /*negrita*/
+  }
+  
+  .footer-contenido a:hover { /*cuando el cursor este encima*/
+    text-decoration: underline; /*subraya*/
+  }
+  

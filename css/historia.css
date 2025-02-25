@@ -1,0 +1,169 @@
+/* Este es el Css de la página Conócenos */
+
+/* Configuración general de la página */
+#colorofondo {
+    background-color: black; /* Color de fondo de la página */
+    color: white; /* Color del texto en la página */
+    font-family: 'Arial', sans-serif; /* Tipo de fuente para el texto */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
+  }
+  
+  /* Barra de navegación */
+  header {
+    position: fixed; /* Mantiene fija la barra en la parte superior de la página */
+    width: 100%; /* Define el ancho de la barra de navegación */
+    top: 0; /* Ubica la barra en la parte superior */
+    left: 0; /* Alinea la barra a la izquierda */
+    background-color: rgba(0, 19, 66, 0.9); /* Color de fondo de la barra con opacidad */
+    z-index: 1000; /* Asegura que la barra esté sobre otros elementos */
+    padding: 10px 0; /* Añade espacio interno en la barra */
+  }
+  
+  /* Contenedor de la barra de navegación */
+  .navbar {
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Distribuye los elementos a los lados */
+    padding: 0 20px; /* Añade espacio a los lados de la barra */
+    max-width: 1200px; /* Define el ancho máximo de la barra */
+    margin: 0 auto; /* Centra la barra de navegación */
+  }
+  
+  /* Estilo del logo */
+  .logo {
+    height: 70px; /* Ajusta la altura del logo */
+  }
+  
+  /* Lista de navegación */
+  .nav-links {
+    list-style: none; /* Elimina los estilos de lista */
+    display: flex; /* Alinea los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 0; /* Elimina el padding predeterminado */
+  }
+  
+  .nav-links li {
+    display: inline; /* Muestra los elementos en línea */
+  }
+  
+  /* Estilos de los enlaces de navegación */
+  .nav-links a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 18px; /* Tamaño del texto */
+    padding: 10px 15px; /* Espaciado interno de los enlaces */
+    transition: 0.3s; /* Transición suave al pasar el cursor */
+  }
+  
+  /* Efecto hover en los enlaces de navegación */
+  .nav-links a:hover {
+    background-color: #0f1895; /* Cambia el color de fondo al pasar el cursor */
+    border-radius: 10px; /* Redondea las esquinas */
+  }
+  
+  /* Estilo del cuadro de búsqueda */
+  #buscar {
+    padding: 8px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto dentro del cuadro */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Redondea los bordes */
+    outline: none; /* Elimina el borde de enfoque */
+    width: 200px; /* Define el ancho del cuadro */
+    margin-left: auto; /* Mueve el cuadro hacia la derecha */
+  }
+  
+  /* Sección de video */
+  .seccion-video {
+    position: relative; /* Permite superponer elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex; /* Alinea los elementos con flexbox */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+    overflow: hidden; /* Oculta el contenido que sobrepase el contenedor */
+  }
+  
+  /* Estilo del video de fondo */
+  .fondo-video {
+    position: absolute; /* Posiciona el video detrás del contenido */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el ancho del video */
+    height: 100%; /* Ajusta la altura del video */
+    object-fit: cover; /* Ajusta el video sin distorsionarlo */
+    z-index: -1; /* Coloca el video en el fondo */
+    filter: brightness(60%); /* Aplica un filtro de brillo al video */
+  }
+  
+  /* Contenedor del contenido sobre el video */
+  .contenido {
+    position: relative;
+    z-index: 2; /* Mantiene el contenido sobre el video */
+    color: white; /* Color del texto */
+    text-shadow: 3px 3px 10px black; /* Sombra para mejorar la legibilidad */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 15px; /* Redondea los bordes */
+  }
+  
+  /* Estilo del título */
+  .titulo {
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    letter-spacing: 4px; /* Espaciado entre letras */
+    animation: fadeIn 1.5s ease-in-out; /* Aplica una animación de entrada */
+  }
+  
+  /* Estilo de la descripción */
+  .descripcion {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9; /* Reduce ligeramente la opacidad */
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Animación de entrada */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /*Estilos de la barra de contacto (footer) */
+  .footer { /*estilo del footer*/
+    position: fixed; /*fija elemento en pantalla*/
+    bottom: 0; /*posiciona en la parte de abajo*/
+    width: 100%; /*ancho*/
+    background-color: rgba(0, 19, 66, 0.9); /*color de fondo*/
+    color: white; /*color de la letra*/
+    text-align: center; /*alinea el texto al centro*/
+    padding: 10px 0; /*espacio entre el contenido y el borde*/
+    font-size: 16px; /*tamaño de la letra*/
+  }
+  
+  .footer-contenido { /*estilo del contenido del footer*/
+    display: flex; /*alinea y distribuye el espacio en la barra de navegacion*/
+    justify-content: center; /*justifica el contenido*/
+    gap: 20px; /*espacio entre los elementos*/
+    flex-wrap: wrap; /*ajusta el contenido al tamaño del contenedor*/
+  }
+  
+  .footer-contenido p { /*estilo del parrafo*/
+    margin: 5px; /*margen*/
+  }
+  
+  .footer-contenido a { /*estilo de los enlaces*/
+    color: #00bfff; /* color de la letra*/
+    text-decoration: none; /*quita la subraya*/
+    font-weight: bold; /*negrita*/
+  }
+  
+  .footer-contenido a:hover { /*cuando el cursor este encima*/
+    text-decoration: underline; /*subraya*/
+  }

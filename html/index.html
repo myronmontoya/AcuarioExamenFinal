@@ -1,0 +1,218 @@
+<!DOCTYPE html>    <!-- Esto indica el tipo de pagina que es en este caso HTML 5 -->
+<html lang="es">    <!-- aqui cambiamos el idioma a español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaNova</title> <!-- este es el titulo de la pagina, es la que va hasta arriba de todo-->
+    <link rel="stylesheet" href="../css/style.css"> <!-- aqui llame la pagina de css, yo la cree como Style -->
+
+
+</head>
+
+<body id="colorofondo"> <!-- cambie el color de fondo -->
+
+<!--Barra de navegación, que se encuentra en la parte de arriba  -->
+
+
+    <header>    <!-- lo pongo en header para que sea el encabezado de todo -->
+        <nav class="navbar">   <!-- aqui cambie el nombre de la clase a navbar -->
+            <img src="../css/medios/imagenes/logoaquario.png" alt="Logo AquaNova" class="logo">
+
+
+            <ul class="nav-links"> <!--tienen hipervinculos a otras paginas web, en este caso es a prodcutos, hsitoria, conocenos-->
+                <li><a href="./index.html">
+                    INICIO
+                </a></li>
+                <li><a href="./conocenos.html">
+                    CONÓCENOS
+                </a></li>
+                <li><a href="./historia.html">
+                    HISTORIA
+                </a></li>
+                <li><a href="./galeria.html">
+                    PRODUCTOS
+                </a></li>    
+                <li><a href="./contactanos.html">
+                    CONTACTANOS
+                </a></li>         
+            </ul>
+            <input type="text" id="buscar" placeholder="🔍 Buscar...">
+        <!-- aqui puse un emoji como buscador para que sea mas llamativo a la vista-->
+        </nav>
+    </header>
+
+
+
+
+
+
+
+                                    <!-- PreSeccion, aqui se encuentra el video del logo-->
+     <!-- decidimos seccionarlo para poder poner varios segmentos en la pagina, con diferentes videos-->
+
+     <section class="seccion-video-logo">
+        <!--ingrese el video el cual se encuentras en la carpeta de medios-->
+            <video class="video-logo" src="../css/vidiosComprimidos/LogoAqua_compressed.mp4" autoplay muted playsinline></video>
+        </section>
+
+     <!--finaliza la subseccion del logo-->   
+        
+
+
+
+
+
+
+
+
+                                                                <!-- Sección de Video, primera parte de la pagina -->
+        <!-- esta seccion es la que sigue al logo y muestra el nombre y un pequeño concepto de nosotros-->
+
+
+    <section class="seccion-video">
+    <!--ingrese el video el cual se encuentras en la carpeta de medios-->
+    <!-- este video a diferencia de los otros, no estan en loop porque es el logo animado-->
+        <video class="fondo-video" src="../css/vidiosComprimidos/fondodiv1_compressed.mp4" autoplay loop muted playsinline>
+
+        </video>
+
+        <!-- este es el texto que va sobre el video -->
+        
+        <!-- utilice el selector class porque en un prinncipio se habiamos usado una hoja de css para todos, pero de acuerdo a lo inidicado por usted mi teniente, lo dividimos por partes-->
+
+        <div class="contenido">
+            <h1 class="titulo">
+                AQUANOVA
+            </h1>
+
+
+            <p class="descripcion">
+                Somos tu tienda de peces, acuarios y accesorios en Ciudad de Guatemala, combinando biotecnología e innovación digital para diseñar hábitats acuáticos inteligentes y sostenibles.
+            </p>
+        </div>
+    </section>
+    <!-- finaliza la primera seccion-->
+
+
+
+
+
+
+
+
+
+                                    <!-- Sección de Biotecnología, segunda parte de la pagina -->
+
+
+    <!-- Sección de Innovaciónm la segunda parte de la pagina -->
+    <!-- Esta seccion es la parte que sigue a el titulo-->
+    <section class="seccion-innovacion">
+        <!-- quisimos incluir una imagen, para no saturar con videos-->
+        <img class="imagen" src="../css/medios/ornamental-fish-2317087_1280.jpg" alt="Peces ornamentales">
+        <div class="contenido">
+            <h2>
+                Innovación en Acuarios
+            </h2>
+            <!-- esete que se encuentra a la par de la imagen-->
+            <p class="texto">
+                En AQUANOVA creemos en la innovación digital que ha transformado por completo la forma en que diseñamos, mantenemos y disfrutamos los acuarios. 
+                Desde sistemas automatizados de filtración y monitoreo inteligente hasta iluminación LED programable y sensores de calidad del agua en tiempo real, 
+                la tecnología ha permitido crear ecosistemas acuáticos más saludables y sostenibles.
+                <br><br> <!-- doble salto de linea para separar lo que es parrafo-->
+                Además, la inteligencia artificial y el análisis de datos están ayudando a comprender mejor el comportamiento de las especies acuáticas, 
+                facilitando la cría responsable y la conservación de ecosistemas marinos.
+            </p>
+        </div>
+    </section>
+<!-- finaliza la segunda seccion-->
+
+
+
+
+
+
+                                                     <!-- Sección de Productos Destacados, tercera seccion -->
+
+
+
+<!-- esta seccion donde se encuentran los productos destacados-->
+
+<!--en la pagina aparecen 3 rectangulos, que son con poductos destacados, -->
+<section class="seccion-productos">
+    
+
+    <!-- titulo de la seccion-->
+
+    <h2 class="titulo-seccion">
+        Productos Destacados
+    </h2>
+
+    <!-- a esto me refiero con los rectangulos-->
+     <!-- este es el primer rectangulo-->
+    <div class="contenedor-productos">
+        <div class="producto">
+            <a href="../html/galeria.html"> <!-- con esto genero que cuando se de click se dirija a la galeria.html -->
+                <img src="../css/medios/imagenes/pesces productos/pez_mas_vendido.webp" alt="Peces Ornamentales">
+            </a>
+
+            <h3>
+                Peces Ornamentales
+            </h3>
+            <p>
+                Descubre nuestra amplia variedad de peces ornamentales de agua dulce y salada, ideales para acuarios comunitarios y biotopos especializados.
+            </p>
+        </div>
+        <!-- este es el segundo rectangulo-->
+        <div class="producto">
+            <a href="../html/galeria.html"> <!-- con esto genero que cuando se de click se dirija a la galeria.html -->
+                <img src="../css/medios/imagenes/Acuario-01.webp" alt="Acuarios Personalizados">
+            </a>
+            <h3>
+                Acuarios Personalizados
+            </h3>
+            <p>
+                Diseñamos y construimos acuarios personalizados de todos los tamaños y formas, con materiales de alta calidad y tecnología avanzada.
+            </p>
+        </div>
+
+        <!-- este es el tercer rectangulo-->
+        <div class="producto">
+            <a href="../html/galeria.html"> <!-- con esto genero que cuando se de click se dirija a la galeria.html -->
+                <img src="../css/medios/imagenes/Utensilios limpieza acuario.jpg" alt="Accesorios para Acuarios">
+            </a>
+            <h3>
+                Accesorios para Acuarios
+            </h3>
+            <p>
+                Encuentra los mejores accesorios para tu acuario, incluyendo filtros, bombas, iluminación, sustratos, decoraciones y más.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- finaliza tercera seccion-->
+
+
+
+<!-- aqui esta el footer que es el contactenos -->
+ 
+<footer class="footer"> <!-- aqui cambie el nombre de la clase a footer -->
+    <div class="footer-contenido"> <!-- aqui cambie el nombre de la clase a footer-contenido -->
+        <p>📞 <strong>
+            Teléfono:</strong> 3706-2621 
+        </p>
+        <p>📧 <strong>
+            Correo:</strong> 
+            <a href="mailto:myronmontoya@gmail.com">
+                myronmontoya@gmail.com
+            </a></p>
+        <p>🌍 <strong>Ubicación:</strong>
+             Guatemala
+            </p>
+    </div>
+</footer>
+
+
+
+</body>
+</html>

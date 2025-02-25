@@ -1,0 +1,41 @@
+/* Este es el Css de Conócenos */
+
+/* esto agrega el color de la pagina  */
+#colorofondo {
+    background-color: black;    /*esto agrega el color de fondo*/
+    color: white;    /*esto agrega el color de la letra*/
+    font-family: 'Arial', sans-serif;   /*tamaño de la letra*/
+    margin: 0;   /* margen del fondo*/
+    padding: 0; /* espacio entre el contenido y el borde*/
+  }
+  
+  
+  
+  
+  /* Barra de navegación */
+  header {
+    position: fixed; /*fija elemento en pantalla*/
+    width: 100%; /*ancho*/
+    top: 0; /*posiciona en la parte de arriba*/
+    left: 0; /*alinea a la izquierda*/
+    background-color: rgba(0, 19, 66, 0.9); /*color de fondo*/
+    z-index: 1000; /*se muestra sobre otros elementos*/
+    padding: 10px 0; /*espacio entre el contenido y el borde*/
+  }
+  
+  /* Estilos de la barra de navegación */
+  .navbar {
+    display: flex; /*alinea y distribuye el espacio en la barra de navegacion*/ 
+    align-items: center; /*centra los elementos de nuestra barra*/
+    justify-content: space-between; /*justifica el contenido*/
+    padding: 0 20px; /*espacio entre el contenido y el borde*/
+    max-width: 1200px; /*ancho maximo*/
+    margin: 0 auto; /*margen del contenido*/
+  }
+  
+  /* Estilo del logo dentro de la barra de navegación */
+  .logo {
+    height: 70px; /* establece la altura del logo */
+  }
+  
+  
