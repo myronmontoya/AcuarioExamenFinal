@@ -65,13 +65,13 @@ header {
 /* 🔹 Sección de contenido */
 .seccion {
   text-align: center;
-  margin: 250px 150px 50px 150px;
+  margin: 100px 150px 50px 150px;
   padding: 40px 20px;
 }
 
 .titulo {
   font-size: 24px;
-  color: #ffffff;
+  color: yellow;
 }
 
 form {
@@ -80,7 +80,8 @@ form {
   position: relative;
   width: 80%;
   max-width: 400px;
-  margin: 150px auto;
+  margin-top: 30px;
+  margin-left: 450px;
   padding: 20px;
   background-color: rgba(0, 19, 66, 0.8);
   border-radius: 10px;
@@ -123,6 +124,13 @@ button:hover {
   justify-content: center; /*justifica el contenido*/
   gap: 20px; /*espacio entre los elementos*/
   flex-wrap: wrap; /*ajusta el contenido al tamaño del contenedor*/
+}
+
+
+p {
+  margin: 5px; /*margen*/
+  font-size: 20px;
+  text-shadow: 10px 10px 10px black;
 }
 
 .footer-contenido p { /*estilo del parrafo*/

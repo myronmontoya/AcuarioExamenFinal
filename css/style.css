@@ -36,7 +36,7 @@
   .nav-links {
     list-style: none; /* Sin viñetas */
     display: flex; /* Flexbox para alineación  horizontal*/
-    gap: px; /* Espacio entre enlaces */
+    gap: 10px; /* Espacio entre enlaces */
     padding: 0; /* Sin relleno */
   }
   
