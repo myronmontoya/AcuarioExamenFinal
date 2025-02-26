@@ -35,8 +35,8 @@
   
   .nav-links {
     list-style: none; /* Sin viñetas */
-    display: flex; /* Flexbox para alineación */
-    gap: 20px; /* Espacio entre enlaces */
+    display: flex; /* Flexbox para alineación  horizontal*/
+    gap: px; /* Espacio entre enlaces */
     padding: 0; /* Sin relleno */
   }
   
@@ -45,12 +45,13 @@
     text-decoration: none; /* Sin subrayado */
     font-size: 18px; /* Tamaño de fuente */
     padding: 10px 15px; /* Relleno interno */
-    transition: 0.3s; /* Transición suave */
+    transition: 0.3s; /*Transición suave*/
   }
   
   .nav-links a:hover {
     background-color: #0f1895; /* Fondo azul al pasar el ratón */
     border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra de caja */
   }
   
   #buscar {
@@ -127,7 +128,7 @@
     font-size: 20px; /* Tamaño de fuente */
     max-width: 800px; /* Ancho máximo */
     margin: 0 auto; /* Centrado horizontal */
-    opacity: 0.9; /* Opacidad */
+    opacity: 0.9; Opacidad
     animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
   }
   
@@ -140,8 +141,9 @@
     padding: 60px 20px; /* Relleno interno */
     text-align: center; /* Texto centrado */
     background: #121212; /* Fondo oscuro */
-    background-image: url(../css/medios/imagenes/tropical-fish-in-aquarium-in-zoo-2025-01-16-08-42-08-utc.jpg); /* Imagen de fondo */
-    background-size: 100%; /* Tamaño de fondo completo */
+    background-image: url(../medios/imagenes/fondidvabajo.jpg); /* Imagen de fondo */
+    background-size: cover; /* Tamaño de fondo completo */
+    filter: brightness(80%); /* Brillo reducido */
   }
   
   .imagen {
@@ -158,6 +160,10 @@
     font-size: 24px; /* Tamaño de fuente */
     line-height: 1.6; /* Altura de línea */
     margin-top: 20px; /* Margen superior */
+    padding: 05%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #121212;
     text-shadow: 5px 5px 10px black; /* Sombra de texto */
     background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
   }
