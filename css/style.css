@@ -131,6 +131,16 @@
     opacity: 0.9; Opacidad
     animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
   }
+
+   /* Animación de entrada */
+   @keyframes fadeIn {
+    from {
+      opacity: 0; /* Opacidad inicial */
+    }
+    to {
+      opacity: 1; /* Opacidad final */
+    }
+  }
   
   /* Sección de innovación */
   .seccion-innovacion {
@@ -168,15 +178,7 @@
     background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
   }
   
-  /* Animación de entrada */
-  @keyframes fadeIn {
-    from {
-      opacity: 0; /* Opacidad inicial */
-    }
-    to {
-      opacity: 1; /* Opacidad final */
-    }
-  }
+ 
   
   /* Sección de productos destacados */
   .seccion-productos {
