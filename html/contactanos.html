@@ -6,68 +6,54 @@
     <title>AquaNova - Conócenos</title>
     <link rel="stylesheet" href="../css/contactanos.css">
 </head>
-<body id="colorofondo">
+<body>
 
-    <!--Barra de navegación -->
-    <header>
-        <nav class="navbar">
-            <img src="../css/medios/imagenes/logoaquario.png" alt="Logo AquaNova" class="logo">
-            <ul class="nav-links">
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./conocenos.html">CONÓCENOS</a></li>
-                <li><a href="./historia.html">HISTORIA</a></li>
-                <li><a href="./contactanos.html">CONTACTANOS</a></li>
+    <header>    <!-- lo pongo en header para que sea el encabezado de todo -->
+        <nav class="navbar">   <!-- aqui cambie el nombre de la clase a navbar -->
+            <img src="../medios/imagenes/logoaquario.png" alt="Logo AquaNova" class="logo">
 
-                <li><a href="./galeria.html">PRODUCTOS</a></li>
+
+            <ul class="nav-links"> <!--tienen hipervinculos a otras paginas web, en este caso es a prodcutos, hsitoria, conocenos-->
+                <li><a href="./index.html">
+                    INICIO
+                </a></li>
+                <li><a href="./conocenos.html">
+                    CONÓCENOS
+                </a></li>
+                <li><a href="./historia.html">
+                    HISTORIA
+                </a></li>
+                <li><a href="./galeria.html"> 
+                    PRODUCTOS
+                </a></li>    
+                <li><a href="./contactanos.html">
+                    CONTACTANOS
+                </a></li>         
             </ul>
             <input type="text" id="buscar" placeholder="🔍 Buscar...">
+        <!-- aqui puse un emoji como buscador para que sea mas llamativo a la vista-->
         </nav>
     </header>
 
-    <!--Primera sección con video de fondo -->
-    <section class="seccion-video">
-        <video class="fondo-video" src="../css/vidiosComprimidos/fondo2_compressed.mp4" autoplay loop muted playsinline></video>
-        <div class="contenido">
-            <h1 class="titulo">CONÓCENOS</h1>
-            <div>
-                <form action="procesar.php" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <br><br>
-            
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br><br>
-            
-                    <label for="edad">Edad:</label>
-                    <input type="number" id="edad" name="edad" min="1" required>
-                    <br><br>
-            
-                    <label for="genero">Género:</label>
-                    <select id="genero" name="genero">
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <br><br>
-            
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
-                    <br><br>
-            
-                    <label>
-                        <input type="checkbox" name="terminos" required>
-                        Acepto los términos y condiciones
-                    </label>
-                    <br><br>
-            
-                    <button type="submit">Enviar</button>
-                </form>
-            
-           </div>
-    
+    <!-- Sección de presentación -->
+    <section class="seccion">
+        <h1 class="titulo">CONÓCENOS</h1>
+        <p>Somos AquaNova, apasionados por la vida acuática y comprometidos con ofrecerte los mejores productos y servicios.</p>
+        
+        <form action="procesar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-    
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
 <!-- aqui esta el footer que es el contactenos -->
 <footer class="footer">
     <div class="footer-contenido">
@@ -78,6 +64,4 @@
 </footer>
 
 </body>
-
-
 </html>

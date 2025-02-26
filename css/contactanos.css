@@ -1,210 +1,114 @@
-/* Este es el Css de la Página de Productos */
+/* 🔹 Configuración general */
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
 
-/* 🔹 Configuración general de la página */
-#colorofondo {
-    background-color: black; /* Color de fondo */
-    color: white; /* Color del texto */
-    font-family: 'Arial', sans-serif; /* Fuente del texto */
-    margin: 0; /* Elimina los márgenes */
-    padding: 0; /* Elimina el padding */
-  }
-  
-  /* 🔹 Barra de navegación */
-  header {
-    position: fixed; /* Mantiene fija la barra en la parte superior */
-    width: 100%; /* Ocupa todo el ancho */
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 19, 66, 0.9); /* Color de fondo con opacidad */
-    z-index: 1000; /* Se mantiene sobre otros elementos */
-    padding: 10px 0;
-  }
-  
-  .navbar {
-    display: flex; /* Usa flexbox para organizar los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: space-between; /* Distribuye el contenido */
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo {
-  height: 70px; /*Tamaño del logo  */
-  }
-  
-  /* 🔹 Enlaces de navegación */
-  .nav-links {
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex; /* Usa flexbox para organizar los elementos */
-    gap: 20px; /* Espacio entre los elementos */
-    padding: 0; /* Elimina el padding */
-  }
-  
-  .nav-links li {
-    display: inline; /* Muestra los elementos en línea */
-  }
-  
-  .nav-links a {
-    color: white; /* Color del texto */
-    text-decoration: none; /* Elimina el subrayado */
-    font-size: 18px; /* Tamaño de la fuente */
-    padding: 10px 15px; /* Espaciado interno */
-    transition: 0.3s; /* Transición suave */
-  }
-  
-  .nav-links a:hover {
-    background-color: #0f1895; /* Color de fondo al pasar el ratón */
-    border-radius: 10px; /* Bordes redondeados */
-  }
-  
-  /* 🔹 Barra de búsqueda */
-  #buscar {
-    padding: 8px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de la fuente */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    outline: none; /* Sin contorno */
-    width: 200px; /* Ancho del campo */
-    margin-left: auto; /* Margen izquierdo automático */
-  }
-  
-  /* 🔹 Sección de video */
-  .seccion-video {
-    position: relative; /* Posición relativa */
-    width: 100%; /* Ancho completo */
-    height: 100vh; /* Alto de la ventana */
-    display: flex; /* Usa flexbox para organizar los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: center; /* Centra horizontalmente los elementos */
-    text-align: center; /* Centra el texto */
-    overflow: hidden; /* Oculta el desbordamiento */
-  }
-  
-  .fondo-video {
-    position: absolute; /* Posición absoluta */
-    top: 0; /* Desde arriba */
-    left: 0; /* Desde la izquierda */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Alto completo */
-    object-fit: cover; /* Cubre el área */
-    z-index: -1; /* Detrás de otros elementos */
-    filter: brightness(60%); /* Filtro de brillo */
-  }
-  
-  .contenido {
-    position: relative; /* Posición relativa */
-    z-index: 2; /* Encima de otros elementos */
-    color: white; /* Color del texto */
-    text-shadow: 3px 3px 10px black; /* Sombra del texto */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 15px; /* Bordes redondeados */
-  }
-  
-  .titulo {
-    font-size: 100px; /* Tamaño de la fuente */
-    font-weight: bold; /* Negrita */
-    text-transform: uppercase; /* Mayúsculas */
-    letter-spacing: 4px; /* Espaciado entre letras */
-    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
-  }
-  
-  .descripcion {
-    font-size: 20px; /* Tamaño de la fuente */
-    max-width: 800px; /* Ancho máximo */
-    margin: 0 auto; /* Centra horizontalmente */
-    opacity: 0.9; /* Opacidad */
-    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
-  }
-  
-  /* 🔹 Sección de productos */
-  .productos {
-    max-width: 1200px; /* Ancho máximo */
-    margin: auto; /* Centra horizontalmente */
-    padding: 40px 20px; /* Espaciado interno */
-    text-align: center; /* Centra el texto */
-  }
-  
-  .categoria-titulo {
-    font-size: 28px; /* Tamaño de la fuente */
-    margin: 20px 0; /* Margen vertical */
-    color: #0f1895; /* Color del texto */
-    text-transform: uppercase; /* Mayúsculas */
-  }
-  
-  /* Grid de productos */
-  .productos-grid {
-    display: grid; /* Usa grid para organizar los elementos */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas automáticas */
-    gap: 20px; /* Espacio entre los elementos */
-    justify-items: center; /* Centra los elementos */
-    margin-top: 20px; /* Margen superior */
-  }
-  
-  .producto {
-    background: rgba(255, 255, 255, 0.1); /* Fondo con opacidad */
-    padding: 15px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    text-align: center; /* Centra el texto */
-    transition: transform 0.3s ease-in-out; /* Transición suave */
-  }
-  
-  .producto img {
-    width: 100%; /* Ancho completo */
-    max-width: 200px; /* Ancho máximo */
-    border-radius: 10px; /* Bordes redondeados */
-  }
-  
-  .producto p {
-    margin-top: 10px; /* Margen superior */
-    font-size: 18px; /* Tamaño de la fuente */
-  }
-  
-  .producto:hover {
-    transform: scale(1.05); /* Escala al pasar el ratón */
-  }
-  
-  /* Animación de entrada */
-  @keyframes fadeIn {
-    from {
-      opacity: 0; /* Opacidad inicial */
-    }
-    to {
-      opacity: 1; /* Opacidad final */
-    }
-  }
-  
-  /*Estilos de la barra de contacto (footer) */
-  .footer { /*estilo del footer*/
-    position: fixed; /*fija elemento en pantalla*/
-    bottom: 0; /*posiciona en la parte de abajo*/
-    width: 100%; /*ancho*/
-    background-color: rgba(0, 19, 66, 0.9); /*color de fondo*/
-    color: white; /*color de la letra*/
-    text-align: center; /*alinea el texto al centro*/
-    padding: 10px 0; /*espacio entre el contenido y el borde*/
-    font-size: 16px; /*tamaño de la letra*/
-  }
-  
-  .footer-contenido { /*estilo del contenido del footer*/
-    display: flex; /*alinea y distribuye el espacio en la barra de navegacion*/
-    justify-content: center; /*justifica el contenido*/
-    gap: 20px; /*espacio entre los elementos*/
-    flex-wrap: wrap; /*ajusta el contenido al tamaño del contenedor*/
-  }
-  
-  .footer-contenido p { /*estilo del parrafo*/
-    margin: 5px; /*margen*/
-  }
-  
-  .footer-contenido a { /*estilo de los enlaces*/
-    color: #00bfff; /* color de la letra*/
-    text-decoration: none; /*quita la subraya*/
-    font-weight: bold; /*negrita*/
-  }
-  
-  .footer-contenido a:hover { /*cuando el cursor este encima*/
-    text-decoration: underline; /*subraya*/
-  }
-  
-  
+/* 🔹 Barra de navegación */
+header {
+  background-color: #003366;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* 🔹 Sección de contenido */
+.seccion {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.titulo {
+  font-size: 24px;
+  color: #003366;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005599;
+}
+
+/*Estilos de la barra de contacto (footer) */
+.footer { /*estilo del footer*/
+  position: fixed; /*fija elemento en pantalla*/
+  bottom: 0; /*posiciona en la parte de abajo*/
+  width: 100%; /*ancho*/
+  background-color: rgba(0, 19, 66, 0.9); /*color de fondo*/
+  color: white; /*color de la letra*/
+  text-align: center; /*alinea el texto al centro*/
+  padding: 10px 0; /*espacio entre el contenido y el borde*/
+  font-size: 16px; /*tamaño de la letra*/
+}
+
+.footer-contenido { /*estilo del contenido del footer*/
+  display: flex; /*alinea y distribuye el espacio en la barra de navegacion*/
+  justify-content: center; /*justifica el contenido*/
+  gap: 20px; /*espacio entre los elementos*/
+  flex-wrap: wrap; /*ajusta el contenido al tamaño del contenedor*/
+}
+
+.footer-contenido p { /*estilo del parrafo*/
+  margin: 5px; /*margen*/
+}
+
+.footer-contenido a { /*estilo de los enlaces*/
+  color: #00bfff; /* color de la letra*/
+  text-decoration: none; /*quita la subraya*/
+  font-weight: bold; /*negrita*/
+}
+
+.footer-contenido a:hover { /*cuando el cursor este encima*/
+  text-decoration: underline; /*subraya*/
+}

@@ -2,40 +2,161 @@
 
 /* esto agrega el color de la pagina  */
 #colorofondo {
-    background-color: black;    /*esto agrega el color de fondo*/
-    color: white;    /*esto agrega el color de la letra*/
-    font-family: 'Arial', sans-serif;   /*tamaño de la letra*/
-    margin: 0;   /* margen del fondo*/
-    padding: 0; /* espacio entre el contenido y el borde*/
-  }
-  
-  
-  
-  
-  /* Barra de navegación */
-  header {
-    position: fixed; /*fija elemento en pantalla*/
-    width: 100%; /*ancho*/
-    top: 0; /*posiciona en la parte de arriba*/
-    left: 0; /*alinea a la izquierda*/
-    background-color: rgba(0, 19, 66, 0.9); /*color de fondo*/
-    z-index: 1000; /*se muestra sobre otros elementos*/
-    padding: 10px 0; /*espacio entre el contenido y el borde*/
-  }
-  
-  /* Estilos de la barra de navegación */
-  .navbar {
-    display: flex; /*alinea y distribuye el espacio en la barra de navegacion*/ 
-    align-items: center; /*centra los elementos de nuestra barra*/
-    justify-content: space-between; /*justifica el contenido*/
-    padding: 0 20px; /*espacio entre el contenido y el borde*/
-    max-width: 1200px; /*ancho maximo*/
-    margin: 0 auto; /*margen del contenido*/
-  }
-  
-  /* Estilo del logo dentro de la barra de navegación */
-  .logo {
-    height: 70px; /* establece la altura del logo */
-  }
-  
-  
+  background-color: black;    /*esto agrega el color de fondo*/
+  color: white;    /*esto agrega el color de la letra*/
+  font-family: 'Arial', sans-serif;   /*tamaño de la letra*/
+  margin: 0;   /* margen del fondo*/
+  padding: 0; /* espacio entre el contenido y el borde*/
+}
+
+
+
+
+/* Barra de navegación */
+header {
+  position: fixed; /*fija elemento en pantalla*/
+  width: 100%; /*ancho*/
+  top: 0; /*posiciona en la parte de arriba*/
+  left: 0; /*alinea a la izquierda*/
+  background-color: rgba(0, 19, 66, 0.9); /*color de fondo*/
+  z-index: 1000; /*se muestra sobre otros elementos*/
+  padding: 10px 0; /*espacio entre el contenido y el borde*/
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  display: flex; /*alinea y distribuye el espacio en la barra de navegacion*/ 
+  align-items: center; /*centra los elementos de nuestra barra*/
+  justify-content: space-between; /*justifica el contenido*/
+  padding: 0 20px; /*espacio entre el contenido y el borde*/
+  max-width: 1200px; /*ancho maximo*/
+  margin: 0 auto; /*margen del contenido*/
+}
+
+/* Estilo del logo dentro de la barra de navegación */
+.logo {
+  height: 70px; /* establece la altura del logo */
+}
+
+
+
+
+
+/* Menú de navegación */
+.nav-links {
+  list-style: none; /*quita los puntos de la lista*/
+  display: flex; /*alinea y distribuye el espacio en la barra de navegacion*/
+  gap: 20px; /*espacio entre los elementos*/
+  padding: 0; /*espacio entre el contenido y el borde*/
+}
+
+/* Estilos de cada elemento de la lista de navegación */
+.nav-links li {
+  display: inline; /* los elementos estarán en línea */
+}
+
+/* Estilos de los enlaces dentro de la barra de navegación */
+.nav-links a {
+  color: white; /* color del texto */
+  text-decoration: none; /* elimina el subrayado de los enlaces */
+  font-size: 18px; /* tamaño del texto */
+  padding: 10px 15px; /* relleno interno para mejorar apariencia */
+  transition: 0.3s; /* efecto de transición para hover */
+}
+
+/* Efecto hover para los enlaces de la barra de navegación */
+.nav-links a:hover {
+  background-color: #0f1895; /* cambia el fondo */
+  border-radius: 10px; /* bordes redondeados */
+}
+
+/* Estilos del buscador dentro de la barra de navegación */
+#buscar {
+  padding: 8px; /* espacio interior del buscador */
+  font-size: 16px; /* tamaño de la letra */
+  border: none; /* sin borde */
+  border-radius: 5px; /* bordes redondeados */
+  outline: none; /* sin contorno */
+  width: 200px; /* ancho del buscador */
+  margin-left: auto; /* alineado a la derecha */
+}
+
+
+
+
+
+
+/* Sección de Video */
+.seccion-video {
+  position: relative; /* posicion relativa */
+  width: 100%; /* ancho */
+  height: 100vh; /* alto */
+  display: flex;  /* alineación flex */
+  align-items: center; /* centra elementos verticalmente */
+  justify-content: center; /* centra elementos horizontalmente */
+  text-align: center; /* alinea el texto al centro */
+}
+
+/* Video de fondo en la sección */
+.fondo-video {
+  position: absolute; /* posición absoluta dentro del contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ajusta la imagen al contenedor */
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+/* Contenido sobre el video */
+.contenido {
+  position: relative; /* posición relativa */
+  z-index: 2;
+  color: white; /* color del texto */
+  text-shadow: 3px 3px 10px black; /* sombra del texto */
+  padding: 20px; /* espacio interior */
+  border-radius: 15px; /* bordes redondeados */
+}
+
+/* Título principal */
+.titulo {
+  font-size: 100px; /* tamaño del texto */
+  font-weight: bold; /* negrita */
+  text-transform: uppercase; /* convierte el texto a mayúsculas */
+  letter-spacing: 4px; /* espacio entre letras */
+  animation: fadeIn 1.5s ease-in-out; /* animación de entrada */
+}
+
+/*Estilos de la barra de contacto (footer) */
+.footer { /*estilo del footer*/
+  position: fixed; /*fija elemento en pantalla*/
+  bottom: 0; /*posiciona en la parte de abajo*/
+  width: 100%; /*ancho*/
+  background-color: rgba(0, 19, 66, 0.9); /*color de fondo*/
+  color: white; /*color de la letra*/
+  text-align: center; /*alinea el texto al centro*/
+  padding: 10px 0; /*espacio entre el contenido y el borde*/
+  font-size: 16px; /*tamaño de la letra*/
+}
+
+.footer-contenido { /*estilo del contenido del footer*/
+  display: flex; /*alinea y distribuye el espacio en la barra de navegacion*/
+  justify-content: center; /*justifica el contenido*/
+  gap: 20px; /*espacio entre los elementos*/
+  flex-wrap: wrap; /*ajusta el contenido al tamaño del contenedor*/
+}
+
+.footer-contenido p { /*estilo del parrafo*/
+  margin: 5px; /*margen*/
+}
+
+.footer-contenido a { /*estilo de los enlaces*/
+  color: #00bfff; /* color de la letra*/
+  text-decoration: none; /*quita la subraya*/
+  font-weight: bold; /*negrita*/
+}
+
+.footer-contenido a:hover { /*cuando el cursor este encima*/
+  text-decoration: underline; /*subraya*/
+}
