@@ -224,6 +224,11 @@
     transform: scale(1.05); /* Escala al pasar el ratón */
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4); /* Sombra de caja */
   }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
   
   /*Estilos de la barra de contacto (footer) */
   .footer { /*estilo del footer*/
