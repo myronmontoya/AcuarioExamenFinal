@@ -1,56 +1,77 @@
 /* 🔹 Configuración general */
 body {
-  background-color: #f4f4f4;
+  background-image: url(../medios/imagenes/fondeformu.jpg);
   font-family: Arial, sans-serif;
+  background-size: 100%;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #ffffff;
 }
 
-/* 🔹 Barra de navegación */
+/* Barra de navegación */
 header {
-  background-color: #003366;
-  padding: 10px;
-  text-align: center;
+  position: fixed; /* Fijo en la parte superior */
+  width: 100%; /* Ancho completo */
+  top: 0; /* Posición en la parte superior */
+  left: 0; /* Alineado a la izquierda */
+  background-color: rgba(0, 19, 66, 0.9); /* Fondo azul oscuro con transparencia */
+  z-index: 1000; /* Superposición alta */
+  padding: 10px 0; /* Relleno superior e inferior */
 }
 
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+  display: flex; /* Flexbox para alineación */
+  align-items: center; /* Alineación vertical centrada */
+  justify-content: space-between; /* Espacio entre elementos */
+  padding: 0 20px; /* Relleno lateral */
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
 }
 
 .logo {
-  height: 50px;
-  margin-right: 20px;
+  height: 70px; /* Altura del logo */
+}
+
+.nav-links {
+  list-style: none; /* Sin viñetas */
+  display: flex; /* Flexbox para alineación */
+  gap: 20px; /* Espacio entre enlaces */
+  padding: 0; /* Sin relleno */
+}
+
+.nav-links a {
+  color: white; /* Texto blanco */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 18px; /* Tamaño de fuente */
+  padding: 10px 15px; /* Relleno interno */
+  transition: 0.3s; /* Transición suave */
+}
+
+.nav-links a:hover {
+  background-color: #0f1895; /* Fondo azul al pasar el ratón */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+#buscar {
+  padding: 8px; /* Relleno interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  outline: none; /* Sin contorno */
+  width: 200px; /* Ancho del campo */
+  margin-left: auto; /* Margen izquierdo automático */
 }
 
 /* 🔹 Sección de contenido */
 .seccion {
   text-align: center;
+  margin: 250px 150px 50px 150px;
   padding: 40px 20px;
 }
 
 .titulo {
   font-size: 24px;
-  color: #003366;
+  color: #ffffff;
 }
 
 form {
@@ -58,7 +79,7 @@ form {
   flex-direction: column;
   width: 80%;
   max-width: 400px;
-  margin: auto;
+  margin: 150px 100px 100px 557px;
 }
 
 input, textarea {

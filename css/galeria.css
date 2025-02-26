@@ -2,7 +2,7 @@
 
 /* 🔹 Configuración general de la página */
 #colorofondo {
-    background-color: black; /* Color de fondo */
+    background: linear-gradient(to right, purple, black); /* Degradado de azul oscuro a azul medio */
     color: white; /* Color del texto */
     font-family: 'Arial', sans-serif; /* Fuente del texto */
     margin: 0; /* Elimina los márgenes */
@@ -142,7 +142,7 @@
   }
   
   .producto {
-    background: rgba(255, 255, 255, 0.1); /* Fondo con opacidad */
+    background: rgba(36, 7, 150, 0.747); /* Fondo con opacidad */
     padding: 15px; /* Espaciado interno */
     border-radius: 10px; /* Bordes redondeados */
     text-align: center; /* Centra el texto */
@@ -203,6 +203,13 @@
     font-weight: bold; /*negrita*/
   }
   
+  a {
+    color: #00bfff; /* color de la letra*/
+
+    text-decoration: none; /*quita la subraya*/
+    font-weight: bold; /*negrita*/
+  }
+
   .footer-contenido a:hover { /*cuando el cursor este encima*/
     text-decoration: underline; /*subraya*/
   }

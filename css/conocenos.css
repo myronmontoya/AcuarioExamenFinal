@@ -39,9 +39,6 @@ header {
 }
 
 
-
-
-
 /* Menú de navegación */
 .nav-links {
   list-style: none; /*quita los puntos de la lista*/
@@ -80,11 +77,6 @@ header {
   width: 200px; /* ancho del buscador */
   margin-left: auto; /* alineado a la derecha */
 }
-
-
-
-
-
 
 /* Sección de Video */
 .seccion-video {
@@ -126,6 +118,18 @@ header {
   text-transform: uppercase; /* convierte el texto a mayúsculas */
   letter-spacing: 4px; /* espacio entre letras */
   animation: fadeIn 1.5s ease-in-out; /* animación de entrada */
+}
+
+.descripcion {
+  font-size: 30px; /* tamaño del texto */
+  text-align: center;
+  margin: 10px 80px 10px 80px;
+  
+}
+
+
+h2 {
+  font-size: 50px;
 }
 
 /*Estilos de la barra de contacto (footer) */
